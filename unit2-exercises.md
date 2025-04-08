@@ -1,5 +1,109 @@
 # C# Unit 2 Practice Exercises
 
+
+
+## Setting Up and Running C# Exercises in VS Code
+
+To add and run these C# exercises in Visual Studio Code, follow these steps:
+
+## Prerequisites
+
+First, make sure you have the necessary tools installed:
+
+1. **Install .NET SDK** - Download and install from [Microsoft's .NET download page](https://dotnet.microsoft.com/download)
+2. **Install VS Code** - Download from [code.visualstudio.com](https://code.visualstudio.com/)
+3. **Install the C# Extension for VS Code** - Open VS Code, go to Extensions (Ctrl+Shift+X), search for "C#" and install the extension by Microsoft
+
+## Creating and Running a C# Project
+
+### Method 1: Using Terminal Commands
+
+1. **Create a folder** for your project
+   ```
+   mkdir CSharpExercises
+   cd CSharpExercises
+   ```
+
+2. **Create a new console application**
+   ```
+   dotnet new console
+   ```
+
+3. **Open the project in VS Code**
+   ```
+   code .
+   ```
+
+4. **Replace the code in Program.cs** with one of the exercise solutions
+
+5. **Run the program**
+   ```
+   dotnet run
+   ```
+
+### Method 2: Using VS Code Interface
+
+1. Open VS Code
+2. Go to File → Open Folder and create or select a folder for your project
+3. Open the Terminal in VS Code (View → Terminal)
+4. Create a new console application:
+   ```
+   dotnet new console
+   ```
+5. VS Code should detect the project and may ask to add required assets - click "Yes"
+6. Replace the content of Program.cs with one of the exercise solutions
+7. Click the Run button (▶️) in the top right or press F5
+
+## Creating Multiple Exercise Projects
+
+To keep your exercises organized, you can create a solution with multiple projects:
+
+1. **Create a solution folder**
+   ```
+   mkdir CSharpExerciseSolution
+   cd CSharpExerciseSolution
+   ```
+
+2. **Create a solution file**
+   ```
+   dotnet new sln
+   ```
+
+3. **Create individual project folders for each exercise**
+   ```
+   mkdir Exercise1
+   cd Exercise1
+   dotnet new console
+   cd ..
+   ```
+
+4. **Add the project to the solution**
+   ```
+   dotnet sln add Exercise1/Exercise1.csproj
+   ```
+
+5. **Repeat for each exercise**
+
+6. **Edit the Program.cs file** in each project folder with the respective exercise code
+
+7. **Run a specific project**
+   ```
+   dotnet run --project Exercise1/Exercise1.csproj
+   ```
+
+## Tips for Running Different Exercises
+
+- For exercises with multiple files (like Exercise 6 on namespaces), create each file in your project folder
+- Make sure namespace names in your code match your project structure
+- Use "dotnet build" to check for errors before running
+- If you're using newer C# features, you might need to specify the language version in your .csproj file:
+  ```xml
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  ```
+
 ## Exercise 1: Console Application Basics
 Create a console application that:
 1. Asks the user for their name
