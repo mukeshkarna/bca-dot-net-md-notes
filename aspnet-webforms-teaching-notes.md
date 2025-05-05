@@ -1,4 +1,4 @@
-# ASP.NET Web Forms: Teaching Guide
+# ASP.NET Web Forms
 
 ## 1. Introduction to ASP.NET Web Forms
    
@@ -536,15 +536,7 @@ private void ClearForm()
 }
 ```
 
-## 9. Teaching Tips and Best Practices
-
-### Teaching Order
-1. Start with basic controls and event handling
-2. Introduce page lifecycle and ViewState
-3. Add validation to forms
-4. Connect to databases
-5. Use data controls to display data
-6. Explore more advanced topics (caching, AJAX, etc.)
+## 9. Best Practices
 
 ### Common Pitfalls
 - ViewState size growing too large
